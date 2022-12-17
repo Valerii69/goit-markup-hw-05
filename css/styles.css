@@ -489,6 +489,7 @@ align-self: flex-start;
 
 
 .work-list {
+    
    display: flex;
    margin: 0px;
    padding: 0px;
@@ -502,20 +503,67 @@ align-self: flex-start;
     transition:  250ms  cubic-bezier (0.4, 0, 0.2, 1);
 }
 
+.photo-thumb{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo-overlay{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: var(--color);
+  
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  } 
+  
+  .photo:hover .photo-overlay{
+    transform: translateX(0);
+  }
+  .text-thumb{
+    position: absolute;
+    color:var(--white-color);
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0px;
+    left: 100px;
+    opacity: 0;
+    margin: 0;
+  
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .photo-thumb:hover .text-thumb{
+    opacity: 1;
+  }
 
-.thumb {
-   position: relative;
 
+.photo-overlay {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label {
+/* .label {
 position: absolute;
 /* height: 70px; */
-width: 100%;
+/* width: 100%;
 bottom: 0;
 left: 0;
-margin: 0;
+margin: 0; */
   /* border-bottom-left-radius: 4px; */
-font-weight: 700;
+/* font-weight: 700;
 font-size: 14px;
 line-height: 16px;
 text-align: center;
@@ -524,9 +572,18 @@ padding-bottom: 27px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 background-color: rgba(47, 48, 58, 0.8);
-color: var(--background-color-page);
+color: var(--background-color-page); */
 /* z-index: 1; */
-}
+
+    
+    /* left: 100px;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
+
+
+
+} */
 
 .work-list.see :nth-child(3n) {
     margin-right: 0px;
@@ -700,7 +757,7 @@ font-size: 18px;
     line-height: 2.00;
     margin-bottom: 4px;
     font-family: Roboto;
-    /* color: var(--title-text-color); */
+    color: var(--title-text-color);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
