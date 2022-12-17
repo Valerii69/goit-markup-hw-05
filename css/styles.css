@@ -555,35 +555,7 @@ align-self: flex-start;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .label {
-position: absolute;
-/* height: 70px; */
-/* width: 100%;
-bottom: 0;
-left: 0;
-margin: 0; */
-  /* border-bottom-left-radius: 4px; */
-/* font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-padding-top: 27px;
-padding-bottom: 27px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-background-color: rgba(47, 48, 58, 0.8);
-color: var(--background-color-page); */
-/* z-index: 1; */
 
-    
-    /* left: 100px;
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-
-
-
-
-} */
 
 .work-list.see :nth-child(3n) {
     margin-right: 0px;
