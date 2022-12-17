@@ -35,7 +35,7 @@
                     <a class="top-adress" href="tel:+380961111111">
                         <svg class="item-icon" width="16px" height="16px">
                         <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
-                    </li>
+                  </li>
             </ul>
         </div>
     </header>
@@ -43,17 +43,8 @@
 <!-- Ефективні рішення для вашого бізнесу -->
         <section class="hero slide-hero">
             <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
-            <div class="backdrop is-hidden" data-modal>
-              <div class="modal">
-                <p>
-                потом стереть
-                </p>
-                <button data-modal-close> Закрити</button>
-              </div>
-          </div>  
-
-
+            <button  type="button" class="hero-button"data-modal-open>Замовити послугу</button>
+            
         </section>
 <!-- <h2>Переваги </h2> -->    
      <section class="section">
@@ -68,6 +59,7 @@
                         <h3 class="title-visually">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="section-advantege">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
+
                     <li class="list-item">
                         <div class="icon-box">
                             <svg class="feuture-card-icon" width="70px" height="70px">
@@ -110,13 +102,13 @@
                     <p class="label">ДЕКСТОПНІ ДОДАТКИ</p>
                   </div>        
                     <div class="thumb">
-                      <li class="thumb">
+                      <li>
                       <img src="./images/Box/box2.jpg" class="work-see" alt="Картинка-2" width="370">
                     </li>
                       <p class="label">МОБІЛЬНІ ДОДАТКИ</p>
                     </div>
                     <div class="thumb">
-                      <li class="thumb">
+                      <li>
                       <img src="./images/Box/box3.jpg" class="work-see" alt="Картинка-3" width="370">
                     </li>
                     <p class="label">ДИЗАЙНЕРСЬК РІШЕННЯ</p>
@@ -381,7 +373,13 @@
         <button data-modal-close> Закрити</button>
       </div>
   </div>   -->
-
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal" >
+     <button  class="modal-close" data-modal-close>
+      <svg width="20px" height="20px">
+        <use href="./images/icons.svg#close-modal"></use></svg></button>
+      </div>
+     </div>  
     <script src="./js/modal.js">
     </script>
 </body>
