@@ -195,8 +195,7 @@ address {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1) ; 
 }
 
 
@@ -215,11 +214,12 @@ address {
     background-color: var(--page-background-color);
     margin-bottom: 30px;
     border-radius: 4px;
+    flex-basis: calc((100% - 90) / 4);
 }
-
 .list-item {
-      flex-basis: calc((100% - 90) / 4);
-    }
+    display: inline-block;
+    width: 270px;
+}
 
 .slide-hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Brainstorm-foto.jpg);
@@ -253,7 +253,6 @@ address {
 }
 .hero-button {
     background-color: #2196F3;
-    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -494,7 +493,7 @@ transition:250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
     height: 44px;
     border-radius: 50%;
     fill: var(--color-social-link);
-    transition: fill 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
+    transition: fill 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0), background-color 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
     
 }
 
@@ -780,13 +779,13 @@ padding-bottom: 0px;
 }
 .project-box {
     display: block;
-    transition: transform 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
 }
 
 .project-box:hover,
 .project-box:focus  {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    /* transition:  250ms  cubic-bezier(0.4, 0, 0.2, 1);       */
+    
     }
     
 .project {
@@ -819,11 +818,7 @@ padding-bottom: 0px;
     margin-left: 0px;
 
 }
-.project-box {
-    max-width: 370px;
-    transition: transform 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
-    
-}
+
 
 .project-windows {
    max-width: 370px;
@@ -834,11 +829,11 @@ padding-bottom: 0px;
 .project-windows .project-box + .project-box:nth-child(n3) {
     margin-right: 0px;
 }
-
-
 .project-box {
+    max-width: 370px;
     list-style: none;
     text-decoration: none;
+transition: box-shadow 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
 }
 
 .site-nav .item + .item {
@@ -890,7 +885,6 @@ padding-bottom: 0px;
     margin-bottom: 0px;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     }
     
@@ -965,14 +959,14 @@ padding-bottom: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: var(--color-social-link);
-    transition: fill 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
+    transition: fill 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0), border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon:hover,
 .clients-icon:focus {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
-    /* transition:  250ms  cubic-bezier(0.4, 0, 0.2, 1); */
+    transition:  250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -1088,8 +1082,7 @@ padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
          }
 
 .button-item {
@@ -1138,7 +1131,6 @@ margin-right: 8px;
 }
 .social {
     display: flex;
-
     justify-content: center;
     gap: 10px;
 }
