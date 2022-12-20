@@ -400,7 +400,7 @@ address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -501,7 +501,6 @@ transition:250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
 .time-social-link:focus  {
     background-color: var(--accent-color);
     fill: var(--white-color);
-    transition: fill 250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
 }
 
 
@@ -544,6 +543,7 @@ transition:250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
   .text-thumb{
     position: absolute;
     color:var(--white-color);
+    font-weight: 700;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -554,7 +554,6 @@ transition:250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
     left: 100px;
     opacity: 1;
     margin: 0;
-    /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   }
   
   .photo-thumb:hover .text-thumb{
@@ -616,18 +615,18 @@ transition:250ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
 .site-nav.visually {
     gap: 30px;
     padding-left: 0px;
-    /* flex-basis: calc((100%-90)/4); */
 }
 
 
 .site-nav .link:hover,
 .site-nav .link:focus,
-.site-address .link:hover,
-.site-address .link:focus,
-.link-header:hover,
-.link-header:focus,
 .top-adress:hover,
 .top-adress:focus {
+    color: var(--accent-color);
+}
+
+.site-address:hover,
+.site-address:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
  }
@@ -966,7 +965,6 @@ padding-bottom: 30px;
 .clients-icon:focus {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
-    transition:  250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -1150,7 +1148,6 @@ margin-right: 8px;
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--accent-color);
-    /* transition:250ms cubic-bezier(0.4, 0.0, 0.2, 1.0); */
 }
 
 
@@ -1164,11 +1161,10 @@ margin-right: 8px;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);;
     /* border: 10px solid violet; */
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }   
-.backdrop.is-hidden {
-    position: absolute;
+.backdrop.is-hidden { 
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
